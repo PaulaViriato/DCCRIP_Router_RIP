@@ -45,20 +45,21 @@
      * Linha 490: modificar para: execCommands ("--startup-commands "+str(sys.argv[3]))
      * Adicionar após linha 490: except Exception: exit = False
      * Linha 481: retirar linha [ initis = str(input()); ]
-     * Linha 482: retirar linha [ actini = initis.split(" ")) ]<br>
-<br>
+     * Linha 482: retirar linha [ actini = initis.split(" ")) ]
+<br><br>
 -> Erro na linha 244: ao invés de "new" é "message";<br>
 -> Erro na linha 348: modificar para: received = json.loads(receiv[0].replace("\\\\", "\\"))<br>
    - Motivo: no ambiente Jupyter Notebook e acrescentado apenas uma barra quando o JSON e<br>
      convertido em string, porem no Linux sao acrescentadas duas barras, e isto causa<br>
-     conflito;<br>
+     conflito;
+<br><br>
 -> Syntax Warning (codigo funciona normalmente sem modificar):<br>
    - Linha 477: retirar linha (global receiv);
    - Linha 476: retirar linha (global server);
    - Linha 433: retirar linha (global exit);
    - Linha 431: retirar linha (global receiv);
-   - Linha 376: retirar linha (global server);<br>
-<br>
+   - Linha 376: retirar linha (global server);
+<br><br>
 ## Observacoes:
 -> Relatorio em: relatorio/relatorio.pdf<br>
 -> Nao e necessario bibliotecas externas<br>
