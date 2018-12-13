@@ -21,8 +21,8 @@
    - Comando inicial: cd code
    - Comando para o router: pyinstaller router.py
    - Comando para o router review: pyinstaller router_review.py
-   - Comando inicial: cd ..<br>
-<br>
+   - Comando inicial: cd ..
+<br><br>
 ## Execucao do Router com o script:
 -> Comando primeiro plano: ./router.sh servidor tempo [arquivo]<br>
 -> Comando finalizacao primeiro plano: quit<br>
