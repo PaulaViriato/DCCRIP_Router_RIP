@@ -36,7 +36,7 @@
 -> Comando finalizacao segundo plano: fg 1 + quit<br>
 <br>
 ## Problemas encontrados:
-##### -> Problemas na passagem para o Linux:<br>
+#### -> Problemas na passagem para o Linux:<br>
    - Motivo: o codigo foi desenvolvido no ambiente Jupyter Notebook, com os comandos sendo<br>
      passados por inputs. Isto foi modificado no codigo final que nao foi enviado;
      * Linha 484: modificar para: execCommands ("--addr "+sys.argv[1])
@@ -47,13 +47,13 @@
      * Linha 481: retirar linha [ initis = str(input()); ]
      * Linha 482: retirar linha [ actini = initis.split(" ")) ]
 <br><br>
-##### -> Erro na linha 244: ao invés de "new" é "message";<br>
-##### -> Erro na linha 348: modificar para: received = json.loads(receiv[0].replace("\\\\", "\\"))<br>
+#### -> Erro na linha 244: ao invés de "new" é "message";<br>
+#### -> Erro na linha 348: modificar para: received = json.loads(receiv[0].replace("\\\\", "\\"))<br>
    - Motivo: no ambiente Jupyter Notebook e acrescentado apenas uma barra quando o JSON e<br>
      convertido em string, porem no Linux sao acrescentadas duas barras, e isto causa<br>
      conflito;
 <br><br>
-##### -> Syntax Warning (codigo funciona normalmente sem modificar):<br>
+#### -> Syntax Warning (codigo funciona normalmente sem modificar):<br>
    - Linha 477: retirar linha (global receiv);
    - Linha 476: retirar linha (global server);
    - Linha 433: retirar linha (global exit);
